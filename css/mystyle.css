@@ -1,0 +1,40 @@
+.Hdragbar {position: fixed;cursor: col-resize;border-style: none;border-width: 0px;border-radius: 0px;}
+.Vdragbar {position: fixed;cursor: row-resize;border-style: none;border-width: 0px;border-radius: 0px;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;color: white;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+.header
+{
+  background-color: #333333;
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+.header:hover
+{
+  text-decoration: underline;
+}
+a:visited
+{color: white;}
+
+.notificationIcon { left: 0px; width: 18px; height: 18px;
+  background: url('../jpg/sprite_white633b.png') 0 0; margin: 0 auto}
+.notificationIcon:hover {background: url('../jpg/sprite_white633b.png') 0 -23px;}
+
+.settingsIcon {left: 18px;width: 18px;height: 18px;
+  background: url('../jpg/sprite_white633b.png') -18px 0;margin: 0 auto}
+.settingsIcon:hover {background: url('../jpg/sprite_white633b.png') -18px -23px;}
+
+.meIcon {background: url('../jpg/Me.png')}
+
+.bordered {border-style: solid;border-width: 1px;}
+
+.chatHeader {background-color:#758a15;font-size: 14px;height:31px;color:white;font-weight: 400;padding: 6px 5px 5px 7px;}
+
+.incircle {height:50px;width:50px;border-radius: 25px;}
+.textbubble {border-radius: 25px;background: #cdcdcd;border-radius: 0px 15px 15px 15px;font-size: 14px;}
+.innerbubble {top: 2px; left: 10px; position: relative;}
+.timestamp {font-size: 10px;}
