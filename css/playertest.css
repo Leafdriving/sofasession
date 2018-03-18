@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'triple-dot-digital-7';
+  src: url('../fonts/triple_dot_digital-7.ttf');
+}
+
+.settingsIcon {left: 18px;width: 18px;height: 18px;
+  background: url('../jpg/sprite_white633b.png') -18px 0;margin: 0 auto}
+.settingsIcon:hover {background: url('../jpg/sprite_white633b.png') -18px -23px;}
+
+.notificationIcon { left: 0px; width: 18px; height: 18px;
+  background: url('../jpg/sprite_white633b.png') 0 0; margin: 0 auto}
+.notificationIcon:hover {background: url('../jpg/sprite_white633b.png') 0 -23px;}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+div {
+  border-style: solid;
+  border-width: 1px;
+}
+
+#playerArtist {
+		-webkit-animation: rotation 0s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+
+#player {
+  background-size: cover;
+  opacity: 0.2;
+  background-image: url("http://www.sofasession.com/public/user/b4/89/892b_dd42.jpg?c=22bc");
+}
+
+@keyframes slide {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+#playerRight {
+  color: red;
+  overflow: hidden;
+  position: relative;
+}
+
+#playerSongNames {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}

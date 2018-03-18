@@ -1,0 +1,248 @@
+
+body {font-family: Arial;}
+.textbubble {border-radius: 25px;background: #cdcdcd;border-radius: 0px 15px 15px 15px;font-size: 14px;}
+.innerbubble {top: 2px; left: 10px; position: relative;}
+.timestamp {font-size: 10px;}
+.bordered {border-style: solid;border-width: 1px;}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    border-radius: 6px 6px 0px 0px;
+    color: white;
+    background-color: green;
+    float: left;
+    border-width: 1px;
+    border-color: black;
+    cursor: pointer;
+    padding: 2px 5px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.Hdragbar {background-color:green;position: fixed;cursor: col-resize;border-style: none;border-width: 0px;border-radius: 0px;}
+.Vdragbar {background-color:green;position: fixed;cursor: row-resize;border-style: none;border-width: 0px;border-radius: 0px;}
+a, a:link, a:focus, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {text-decoration: underline;cursor:pointer}
+.header
+{
+  background-color: #333333;
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+} .header:visited {color: white;}
+.BlockHeader {
+  background-color:#758a15;
+  font-size: 14px;
+  height:31px;
+  color:white;
+  font-weight: 400;
+  padding: 6px 5px 5px 7px;
+}
+.darkbox {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 2px 8px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font: normal 13px/normal "ubuntu", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  border-color: rgb(115,115,115);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgb(115,115,115);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.lightbox {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 2px 8px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font: normal 13px/normal "ubuntu", Helvetica, sans-serif;
+  color: rgba(115,115,115,0.9);
+  border-color: rgb(115,115,115);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: 'transparent';
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(115,115,115,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.slightbox {
+}
+.slightbox:hover {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 1px 1px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border-color: rgb(115,115,115);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: 'transparent';
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(115,115,115,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.slightbox:active {
+      background: rgb(115,115,115);
+      color: white;
+      -webkit-transition: all 3ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 3ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 3ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 3ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.incircle {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.lincircle {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.sincircle {
+  height: 35px;
+  width: 35px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+progress {
+  background-color: #313252;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.playerbutton {
+  position: relative;
+  margin: 5px;
+  margin-right: -17px;
+  color: black;
+
+  height: 22px;
+  border-radius: 8px;
+  background: #019DFF;
+  box-shadow: inset 1px 1px 1px rgba(255,255,255,0.6), inset -1px -1px 1px rgba(0,0,0,0.6);
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.playerbutton::-moz-focus-inner {
+  border: 0;
+}
+
+.playerbutton:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-image-source: radial-gradient(ellipse closest-side, rgba(0,255,255,0.6) 0%, rgba(0,0,0,0) 100%);
+  border-image-slice: 49% fill;
+  border-image-width: 15px 11px 7px 5px;
+  border-width: 1;
+}
+
+.playerbutton:after {
+  content: attr(data-label);
+  position: absolute;
+  top: 2px; left: 4px; right: 4px; height: 9px;
+  border-radius: 9px 9px 0 0 / 6px 6px 0 0;
+  background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.2));
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-size: 15px;
+}
+
+.playerbutton:hover {
+  background: #02AAFF;
+}
+
+.playerbutton:hover:before {
+  border-image-source: radial-gradient(ellipse closest-side, rgba(50,255,255,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.playerbutton:active {
+  background: #0066AA;
+}
+
+.playerbutton:active:before {
+  border-image-source: radial-gradient(ellipse closest-side, rgba(20,200,255,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.playerbutton:focus {
+  outline: none;
+  border-image-source: radial-gradient(ellipse closest-side, rgba(0,0,0,0) 70%, rgba(0,0,255,0.33) 75%, cyan 80%, white 85%, cyan 90%, rgba(0,0,255,0.33) 95%, rgba(0,0,0,0));
+  border-image-slice: 49%;
+  border-image-width: 15px;
+  border-image-outset: 5px;
+  border-width: 0;
+  border-bottom-width: 1px;
+}

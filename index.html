@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Player Test</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/MooTools-More-1.6.0.js"></script>
+  <script src="js/amplitude.min.js"></script>
+  <script src="js/notify.js"></script>
+  <script src="js/liefs-layout-manager.V1.0.3.min.js"></script>
+  <script src="js/leddisplay/jquery.leddisplay.js"></script>
+  <script src="js/initdata.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/playertest.css">
+  <link rel="stylesheet" type="text/css" href="css/blockstyles.css">
+
+  <SCRIPT LANGUAGE="JavaScript" SRC="js/volume-controller-script/szcript.js"></SCRIPT>
+  <link rel="stylesheet" type="text/css" href="js/volume-controller-script/style.css" />
+
+
+</head>
+
+<body onload="drawvolumecontroller(14,29,8);switchTab(event, 'Latest')">
+
+  <div id="MembersHeader" class="BlockHeader">Members Window</div>
+  <div id="ChatHeader" class="BlockHeader">Chat Window</div>
+  <div id="FeedHeader" class="BlockHeader">Feed Window</div>
+
+  <input type="text" id="message" placeholder="Enter Artist Name" class="message" autocomplete="off" style="width:100%;border:1px;padding:4px;margin:-1px">
+
+
+  <div id="SendMessage">
+    <table border=1 frame=void rules=rows width=100%>
+      <col width="55">
+      <tr>
+        <td style="vertical-align: top">
+          <img class="incircle" src="http://www.sofasession.com/public/user/9e/89/8915_e3ae.jpg?c=7a74" alt="">
+          <button>Send</button>
+        </td>
+        <td>
+          <textarea textarea rows="5" cols="15" placeholder="Enter your message here"></textarea>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="ChatWindow" style="overflow-y: auto">
+    <table border=1 frame=void rules=rows width=100%>
+        <col width="55">
+        <tr style="border-bottom: 1px solid black">
+          <td>
+            <img class="incircle" src="http://www.sofasession.com/application/modules/User/externals/images/nophoto_user_thumb_icon.png" alt="" />
+          </td>
+          <td  style="vertical-align: middle">
+            <div class="textbubble">
+                the little program has to be installed<br />
+                <span class="timestamp">
+                  &nbsp&nbsp&nbspMagnus - Mar 4, 13:01
+                </span>
+
+            </div>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid black">
+          <td>
+            <img class="incircle" src="http://www.sofasession.com/application/modules/User/externals/images/nophoto_user_thumb_icon.png" alt="" />
+          </td>
+          <td  style="vertical-align: middle">
+            <div class="textbubble">
+                the little program has to be installed<br />
+                <span class="timestamp">
+                  &nbsp&nbsp&nbspMagnus - Mar 4, 13:01
+                </span>
+
+            </div>
+          </td>
+        </tr>
+      </table>
+  </div>
+
+  <div id="Members" style="overflow-y: auto">
+    <table border=1 frame=void rules=rows width=100%>
+      <col width="55">
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/0e/89/8885_6579.JPG?c=c767" alt="" class="incircle">
+        </td>
+        <td align="left">
+          margab
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/fa/86/8674_0854.jpg?c=e299" alt="" class="incircle">
+        </td>
+        <td>
+          mikesebbage
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/0e/89/8885_6579.JPG?c=c767" alt="" class="incircle">
+        </td>
+        <td align="left">
+          margab
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/fa/86/8674_0854.jpg?c=e299" alt="" class="incircle">
+        </td>
+        <td>
+          mikesebbage
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/0e/89/8885_6579.JPG?c=c767" alt="" class="incircle">
+        </td>
+        <td align="left">
+          margab
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/fa/86/8674_0854.jpg?c=e299" alt="" class="incircle">
+        </td>
+        <td>
+          mikesebbage
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/0e/89/8885_6579.JPG?c=c767" alt="" class="incircle">
+        </td>
+        <td align="left">
+          margab
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/fa/86/8674_0854.jpg?c=e299" alt="" class="incircle">
+        </td>
+        <td>
+          mikesebbage
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/0e/89/8885_6579.JPG?c=c767" alt="" class="incircle">
+        </td>
+        <td align="left">
+          margab
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="http://www.sofasession.com/public/user/fa/86/8674_0854.jpg?c=e299" alt="" class="incircle">
+        </td>
+        <td>
+          mikesebbage
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <div id="MainWindow" style="overflow-y: auto">
+    <input id="volumecontrol" type="range" class="amplitude-volume-slider"/>
+    <h2>Hello World</h2>
+    <p>I am the user 'leafdriving' on sofasession.com.&nbsp; I am not affiliated with sofasession.com in any way.<br />Sofasession facilitates the ablility to 'copy' something you like.... and 'improve' and 'repost'<br /><br />I guess in my own way, I'm doing the same thing:<br />Take sofasession.com....... Improve MY WAY.... and repost.<br /><br />I will be working to improve the interface in many ways:<br />(None of this is in stone.... looking for feedback)</p>
+    <ol>
+      <br /><li>&nbspMOST IMPORTANT - Device Compatible - Resizes for all devices.</li>
+      <br /><li>Interface Design, Broken in to modules:</li>
+
+      <br /><li>Player (Almost Always Visible) Adjustable Width</li>
+      <ol>
+        <li>Tall View (Auto-pick -&gt; can be forced)</li>
+        <li>Shortl View (Auto-pick -&gt; can be forced)</li>
+      </ol>
+      <br /><li>Playlist (If tall view -&gt; appears below Player)</li>
+      <ol>
+        <li>Tab - Latest (latest mixes created)</li>
+        <li>Tab - Artist (latest mixes by selected artist)</li>
+        <li>Tab - Playlists (Users Can Make infinate lists)</li>
+      </ol>
+      <br /><li>Messaging</li>
+      <ol>
+        <li>Top - Shows list of active Users (click to PRIVATE message)</li>
+        <li>Below Top - Search for user to PRIVATE message [because not online]</li>
+        <li>Bottom - Public Chat Interface (exactly as current)</li>
+      </ol>
+      <br /><li>Feed - All Feed Topics are 'minimized' - click expands</li>
+      <ol>
+        <li>Song Created (Click moves to player and starts)</li>
+        <li>Pic/Post/Other Creates standard feed</li>
+        <li>Bottom - Public Chat Interface (exactly as current)</li>
+      </ol>
+    <br /><li>Modules are Interchangeable... So (now works for only large screen)<br />On small screens, only 'x' modules can fit... and will be open.<br />Modules open and collapse depending on user interaction.</li>
+    </ol>
+<br />
+    I look forward to feedback:<br>
+    Public - Post on Sofasession main feed<br>
+    Private - leafdriving@hotmail.com<br>
+  </div>
+
+
+  <img id="Iconbtn" src="jpg/logo_01_68x56.png" />
+  <div id="hblank" class="header"></div>
+  <div id="Homebtn" class="header"><a id="Homelink"  ><BR />Home</a></div>
+  <div id="Browsebtn" class="header"><a id="Browselink"><BR />Browse</a></div>
+  <div id="Songsbtn" class="header"><a id="Songslink" ><BR />Songs</a></div>
+  <div id="Helpbtn" class="header"><a id="Helplink"  ><BR />Help</a></div>
+  <div id="Settingsbtn" class="header"><br /><div class="settingsIcon"></div></div>
+  <div id="Notifybtn" class="header"><br /><div class="notificationIcon"></div></div>
+  <div id="Userbtn" class="header"><a id="Userlink"><img src="jpg/Me.png" width=52px height=52px /></a></div>
+  <div id="PlayerHeader" class="BlockHeader">Player Window</div>
+<!---      Player     -->
+  <div id="player"></div>
+  <img id="playerArtist" />
+  <div id="playerScrolling" >
+    <canvas id="cvs" class="demo-canvas">Stone Door - Glass House (ZV's Mix 1)For Bassist</canvas><br />
+    <div id="playerSongName">Stone Door - Glass House (ZV's Mix 1)For Bassist</div>
+  </div>
+      <!---      Player Buttons    -->
+  <button id="playerStop" class="amplitude-stop"><span class="glyphicon glyphicon-stop"></span></button>
+  <button id="playerPause" class="amplitude-pause"><span class="glyphicon glyphicon-pause amplitude-pause"></span></button>
+  <button id="playerPlay" class="amplitude-play"><span class="glyphicon glyphicon-play"></span></button>
+  <span id="playerTrackNo">01/07</span>
+  <button id="playerPrevious" class="amplitude-prev"><span class="glyphicon glyphicon-backward"></span></button>
+  <button id="playerNext" class="amplitude-next"><span class="glyphicon glyphicon-forward"></span></button>
+  <div id="playerVolume"><div id="volumcontroller"></div></div>
+      <!---      Player Status    -->
+  <div id="playerTimeUp">
+    <span class="amplitude-current-time" amplitude-main-current-time="true"></span>
+  </div>
+  <div id="playerRange">
+    <progress amplitude-main-song-played-progress="true" id="song-played-progress" class="amplitude-song-played-progress" value="0"></progress>
+  </div>
+  <div id="playerTimeDown">
+    <span class="amplitude-duration-time" amplitude-main-duration-time="true"></span>
+  </div>
+      <!---      Player Extended Only    -->
+  <div id="PlayerContributers">
+    &nbsp<img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/0e/89/8885_6579.JPG?c=c767" />
+    <img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/06/7d/7c89_83b1.jpg?c=15b5" />
+    <img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/12/0a/0a08_898c.jpg?c=9079" />
+    <img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/21/29/28f8_f5aa.jpg?c=849a" />
+    <img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/43/0a/0a39_16c1.jpg?c=b2c0" />
+    <img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/4a/24/2426_0f32.JPG?c=bca0" />
+    <img title="UserName" class="sincircle" src="http://www.sofasession.com/public/user/49/10/1039_5db4.JPG?c=c19a" />
+  </div>
+  <div id="PlayerStyles">&nbsp                                        <!--- Player Extended Styles -->
+        <span title="Music Style: Blues" class="darkbox" >Blues</span>
+        <span title="Music Style: Jazz" class="darkbox" >Jazz</span>
+        <span title="Music Style: Electronic" class="darkbox">Electronic</span>
+  </div>
+  <div id="PlayerInstruments"  title="Instruments">&nbsp              <!--- Player Extended Instruments -->
+    <span title="Music Style: Blues" class="lightbox">Drums</span>
+    <span title="Music Style: Jazz" class="lightbox">E-Guitar</span>
+    <span title="Music Style: Electronic" class="lightbox">Piano</span>
+  </div>
+      <!--- Player Footer -->
+  <div id="PlayerFooter"  style="font-size: 0.7em;">
+      <span style="float:left">
+        <span title="Number of Song Plays">&nbsp&nbsp<span class="glyphicon glyphicon-play"></span>119</span>
+        <span title="Number of Song Likes">&nbsp&nbsp<span class="glyphicon glyphicon-heart"></span>119</span>
+        <span title="Number of Song Comments">&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>119</span>
+        <span title="Number of Song Tracks">&nbsp&nbsp<span class="glyphicon glyphicon-music"></span>119</span>
+      </span>
+      <span style="float:right">
+            <span id="ShareSong">&nbsp&nbsp
+              <span class="slightbox">
+                <span class="glyphicon glyphicon-share"></span>
+                Share
+              </span>
+            </span>
+            <span id="RePostSong">&nbsp&nbsp
+              <span class="slightbox">
+                <span class="glyphicon glyphicon-retweet"></span>
+                Repost
+                </span>
+              </span>
+            <span id="FavouritesSong">&nbsp&nbsp
+              <span class="slightbox">
+                <span class="glyphicon glyphicon-star-empty"></span>
+                Favourite
+                </span>
+              </span>
+            <span id="LikeSong">&nbsp&nbsp
+              <span class="slightbox">
+                <span class="glyphicon glyphicon-heart-empty"></span>
+                Like
+              </span>
+            </span>&nbsp&nbsp&nbsp
+      </span>
+  </div>
+
+  <!---      Playlist     -->
+  <div id="recentPlaylist"
+    style='background-size: cover;opacity: 0.2;background-image: url("http://www.sofasession.com/public/user/b4/89/892b_dd42.jpg?c=22bc");'>
+  </div>
+
+  <div id="playlistTabs" class="tab" style="background-color:green">
+    <button class="tablinks" onclick="switchTab(event, 'Latest')">Latest</button>
+    <button class="tablinks" onclick="switchTab(event, 'Paris')">My Songs</button>
+    <button class="tablinks" onclick="switchTab(event, 'Tokyo')">Playlists</button>
+  </div>
+  <div id="PlaylistHeader" class="BlockHeader">Playlist Window</div>
+  <div id="PlayerColumnBlankBottom" style="overflow-y: auto">
+    <div id="Latest" class="tabcontent" style="padding:0px;">
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+  </div>
+</body>
+
+<script src="layout/playerListeners.js"></script>
+<script src="layout/playertest.js"></script>
+</html>
